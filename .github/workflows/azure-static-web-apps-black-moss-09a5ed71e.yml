@@ -16,9 +16,8 @@ jobs:
         - uses: redkubes/docusaurus-deploy-action@v1
           with:
             source-folder: my-website
-            repo_token: ${{ secrets.GITHUB_TOKEN }}
-            # git-user: $SOME_USERNAME
-            # git-password: ${{ secrets.GITHUB_TOKEN }}
+            git-user: mndavec
+            git-password: ${{ secrets.GITHUB_TOKEN }}
             deployment-branch: gh-pages
             
   build_and_deploy_job:
